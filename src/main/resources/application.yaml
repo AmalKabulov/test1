@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: abcd123
+    url: jdbc:mysql://localhost:3306/patents_cn_prod?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: validate
+
+management:
+  server:
+    port: 8085
+  security:
+    enabled: false
+  address: 127.0.0.1
+
